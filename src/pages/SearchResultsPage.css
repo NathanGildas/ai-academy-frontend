@@ -1,0 +1,67 @@
+/* src/pages/SearchResultsPage.css */
+.search-results {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.search-results h1 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.results-count {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.search-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.search-result-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.search-result-item:hover {
+    transform: translateY(-5px);
+}
+
+.search-result-item h3 {
+    margin-top: 0;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.search-result-item p {
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+}
+
+.search-result-item .course-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.no-results {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.no-results p {
+    margin-bottom: 1rem;
+}
+
+.no-results a {
+    color: #3498db;
+    text-decoration: underline;
+}
