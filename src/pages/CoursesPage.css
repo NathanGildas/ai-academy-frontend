@@ -1,0 +1,126 @@
+/* src/pages/CoursesPage.css */
+.filter-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.filter-btn:hover {
+    background-color: #e9ecef;
+}
+
+.filter-btn.active:hover {
+    background-color: #2980b9;
+}
+
+.courses-container.full-width {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-card.detailed {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-card.detailed:hover {
+    transform: translateY(-5px);
+}
+
+.course-card.detailed h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.course-card.detailed p {
+    padding: 0 1.5rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.course-card.detailed .course-details {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.course-card.detailed .price {
+    font-weight: bold;
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+.course-card.detailed .level {
+    background-color: #f4f6f9;
+    color: #2c3e50;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.course-features {
+    list-style: none;
+    padding: 0 1.5rem;
+    margin: 15px 0;
+}
+
+.course-features li {
+    padding: 5px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.course-features li:before {
+    content: "✓";
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.course-card.detailed .btn {
+    margin: 0.5rem 1.5rem 1.5rem;
+}
+
+.no-courses {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .courses-container.full-width {
+        grid-template-columns: 1fr;
+    }
+}
